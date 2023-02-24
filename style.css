@@ -1,10 +1,17 @@
 body {
     text-align: center;
     background-color: aliceblue;
+    background-image :url("https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?size=626&ext=jpg&ga=GA1.2.1517275784.1670776127&semt=ais");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
 }
 
 h1 {
     font-size: 50px;
+}
+
+.font-style{
+    color:white;
 }
 
 p {
@@ -23,6 +30,16 @@ input::placeholder {
     font-family: serif;
     justify-content: center;
     text-align: center;
+    background-color :white;
+}
+
+input:not(:placeholder-shown) {
+    background-color:#192bc2;
+  }
+
+input:hover{
+    cursor:pointer;
+    border:2px solid cyan;
 }
 
 .digits {
@@ -40,7 +57,7 @@ input::placeholder {
 }
 
 .digits:active {
-    border: 6px solid lightskyblue;
+    border: 8px solid lightskyblue;
     box-shadow: 10px 10px 5px rgb(218, 217, 217);
     outline: none;
 }
@@ -63,4 +80,15 @@ input::placeholder {
     right:0px;
     font-size: 10px;
     color: rgb(98,98,98);
+}
+
+@media only screen and (min-width:700px) and (max-width:1185px) {
+    .digits{
+        height: 200px;
+        width: 130px;
+        transition: ease all .5s;    }
+    .last-container{
+        font-size: 25px;
+    }
+    
 }
